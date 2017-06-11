@@ -1,0 +1,243 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100vh;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #ddd;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+.nav-links {
+	display: none;
+	/*hamburger menu for mobile*/
+}
+
+button {
+	display: inline-block;
+	height: 50%;
+}
+
+div {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+footer {
+	height: 25px;
+	width: 100%;
+	background-color: #ddd;
+	margin: 0 auto;
+}
+
+.container {
+	display: block;
+	height: 100vh;
+}
+
+.hero {
+	width: 100%;
+	height: 33%;
+	background-color: #ccc;
+	padding-top: 67px;
+}
+
+.feature {
+	width: 100%;
+	min-height: 25%;
+	background-color: #eee;
+}
+
+.feature:nth-child(odd) {
+	background-color: #ccc;
+}
+
+.content-container {
+	height: 100vh;
+}
+
+.profile {
+	min-height: 25%;
+	background-color: #eee;
+	padding-top: 100px;
+}
+
+.instructions {
+	min-height: 10%;
+	background-color: #bbb;
+}
+
+.profile-section {
+	height: 45%;
+	background-color: #ccc;
+}
+
+.profile-section:last-child {
+	background-color: #eee;
+}
+
+.lists-section {
+	width: 100%;
+	height: 100%;
+}
+
+.list-container {
+	height: 100%;
+}
+
+.game-item {
+	height: 20%;
+	background-color: #eee;
+}
+
+.game-item:nth-child(odd),
+.friend:nth-child(odd) {
+	background-color: #ddd;
+}
+
+.friends-list {
+	display: none;
+}
+
+textarea {
+	height: 200px;
+	width: 90%;
+}
+
+input {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+}
+
+input[type=search] {
+	width: 150px;
+	margin: 0;
+}
+
+form {
+	border: 1px solid #ccc;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.game-info {
+	min-height: 50%;
+	background-color: #bbb;
+}
+
+@media (min-width: 1024px) {
+	
+	nav {
+		margin: 0 auto;
+	}
+
+	.nav-links {
+		display: block;
+	}
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 1200px;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.hero {
+		flex-basis: 100%;
+		height: auto;
+	}
+
+	.feature {
+		width: 33.3%;
+		min-height: auto;
+	}
+
+	footer {
+		position: absolute;
+		bottom: 0;
+	}
+
+	.content-container {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		justify-content: space-between;
+		width: 75%;
+		padding-top: 67px;
+	}
+
+	.profile {
+		width: 25%;
+		background-color: #fff;
+	}
+
+	.instructions {
+		height: 20%;
+		flex-basis: 100%;
+	}
+
+	.profile-section {
+		height: 80%;
+		background-color: #ccc;
+		flex-basis: 50%;
+	}
+
+	.lists-section {
+		background-color: #aaa;
+	}
+
+	.friends-list {
+		display: block;
+		width: 50%;
+		height: 100%;
+		border-left: 2px solid #ccc;
+	}
+
+	.friend {
+		height: 75px;
+	}
+
+	.mobile-friends {
+		display: none;
+	}
+
+	.contact {
+		flex-basis: 100%;
+		background-color: #bbb;
+		height: 50px;
+	}
+
+	.contact-form {
+		width: 50%;
+		background-color: #eee;
+	}
+
+	.game-info {
+		flex-basis: 100%;
+		min-height: 300px;
+	}
+
+	.friend-panel {
+		background-color: #ccc;
+		flex-basis: 100%;
+	}
+
+}
+
+
+
+
+
+
+
+
